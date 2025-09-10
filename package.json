@@ -1,0 +1,12 @@
+{
+  "name": "@linlong/proxee",
+  "version": "2.0.0",
+  "description": "A simple proxy logger and inspector for developers.",
+  "license": "ISC",
+  "author": "linlong chen",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  }
+}
