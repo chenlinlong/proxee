@@ -1,7 +1,7 @@
 /*
  * @Date: 2025-09-15 00:10:55
  * @LastEditors: chenlinlong 786785040@qq.com
- * @LastEditTime: 2025-09-15 00:17:55
+ * @LastEditTime: 2025-09-15 00:37:02
  * @FilePath: \@linlong-proxee\src\logger.ts
  */
 // src/logger.ts
@@ -9,7 +9,7 @@ import log4js from 'log4js';
 import path from 'path';
 
 // 我们先硬编码日志路径，之后可以升级为从配置文件读取
-const logFilePath = path.resolve(process.cwd(), 'logs/proxee.log');
+const logFilePath = path.resolve(process.cwd(), 'logs/pro.log');
 
 log4js.configure({
     appenders: {
