@@ -2,7 +2,7 @@
  * @Date: 2025-09-15 00:10:55
  * @LastEditors: chenlinlong 786785040@qq.com
  * @LastEditTime: 2025-09-15 18:19:50
- * @FilePath: \@linlong-proxee\src\logger.ts
+ * @FilePath: \@linlongchen-proxee\src\logger.ts
  * @Description: This module configures and exports a singleton instance of the log4js logger.
  * It sets up a file-based logger that rotates daily, making it suitable for
  * persistent logging in a server application.

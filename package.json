@@ -1,9 +1,9 @@
 {
-  "name": "@linlong/proxee",
+  "name": "@linlongchen/proxee",
   "version": "2.0.0",
   "description": "A simple proxy logger and inspector for developers.",
   "license": "ISC",
-  "author": "linlong chen",
+  "author": "linlongchen chen",
   "type": "module",
   "main": "src/server.ts",
   "scripts": {

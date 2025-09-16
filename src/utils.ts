@@ -2,7 +2,7 @@
  * @Date: 2025-09-15 15:31:13
  * @LastEditors: chenlinlong 786785040@qq.com
  * @LastEditTime: 2025-09-15 18:22:08
- * @FilePath: \@linlong-proxee\src\utils.ts
+ * @FilePath: \@linlongchen-proxee\src\utils.ts
  * @Description: A collection of utility functions used across the application.
  */
 

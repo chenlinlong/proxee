@@ -2,7 +2,7 @@
  * @Date: 2025-09-15 15:33:37
  * @LastEditors: chenlinlong 786785040@qq.com
  * @LastEditTime: 2025-09-15 18:21:16
- * @FilePath: \@linlong-proxee\src\config.ts
+ * @FilePath: \@linlongchen-proxee\src\config.ts
  * @Description: This module handles all configuration loading for the proxee application.
  * It follows a hierarchical approach to merge configurations from three sources:
  * 1. Default values (hardcoded).

@@ -1,4 +1,4 @@
-# proxee (@linlong/proxee)
+# proxee (@linlongchen/proxee)
 
 A simple and lightweight CLI proxy for logging and inspecting HTTP/API requests during development.
 
@@ -17,4 +17,4 @@ A simple and lightweight CLI proxy for logging and inspecting HTTP/API requests 
 Install the package globally using npm:
 
 ```bash
-npm install -g @linlong/proxee
+npm install -g @linlongchen/proxee
