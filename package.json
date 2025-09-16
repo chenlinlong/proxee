@@ -8,7 +8,8 @@
   "main": "src/server.ts",
   "scripts": {
     "test": "jest",
-    "dev": "concurrently \"tsc --watch\" \"node --watch dist/bin/cli.js\""
+    "dev": "concurrently \"tsc --watch\" \"node --watch dist/bin/cli.js\"",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
