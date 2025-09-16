@@ -13,11 +13,11 @@ describe('logResponse Utility', () => {
     });
 
     it('should log a successful response and call the file logger', async () => {
-        const loggerModule = await import('./logger.js');
+        const loggerModule = await import('../logger.js');
         
         const infoSpy = jest.spyOn(loggerModule.default(), 'info').mockImplementation(() => {});
 
-        const { logResponse } = await import('./utils.js');
+        const { logResponse } = await import('../utils.js');
 
         const fakeProxyRes = {
             statusCode: 200,
@@ -33,10 +33,10 @@ describe('logResponse Utility', () => {
     });
 
     it('should log a server error response correctly', async () => {
-        const loggerModule = await import('./logger.js');
+        const loggerModule = await import('../logger.js');
         const infoSpy = jest.spyOn(loggerModule.default(), 'info').mockImplementation(() => {});
 
-        const { logResponse } = await import('./utils.js');
+        const { logResponse } = await import('../utils.js');
         
         const fakeProxyRes = {
             statusCode: 500,

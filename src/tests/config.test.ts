@@ -1,7 +1,13 @@
+/*
+ * @Date: 2025-09-16 21:45:56
+ * @LastEditors: chenlinlong 786785040@qq.com
+ * @LastEditTime: 2025-09-17 00:03:29
+ * @FilePath: \@linlong-proxee\src\tests\config.test.ts
+ */
 
 import { jest, describe, it, expect, afterEach, beforeEach } from '@jest/globals';
 import fs from 'fs';
-import { DefaultConfig } from './model.js';
+import { DefaultConfig } from '../model.js';
 
 describe('getConfig Utility', () => {
   const originalArgv = process.argv;
@@ -21,7 +27,7 @@ describe('getConfig Utility', () => {
     process.argv = ['node', 'jest'];
 
     // ACT: Run the function
-    const { default: getConfig } = await import('./config.js');
+    const { default: getConfig } = await import('../config.js');
     const config = getConfig();
 
     expect(config).toEqual(expect.objectContaining(DefaultConfig as any));
@@ -33,7 +39,7 @@ describe('getConfig Utility', () => {
     jest.spyOn(fs, 'existsSync').mockReturnValue(true);
     jest.spyOn(fs, 'readFileSync').mockReturnValue(JSON.stringify(fileConfig));
     
-    const { default: getConfig } = await import('./config.js');
+    const { default: getConfig } = await import('../config.js');
     const config = getConfig();
 
     expect(config.port).toBe(9000);
@@ -53,7 +59,7 @@ describe('getConfig Utility', () => {
     jest.spyOn(fs, 'existsSync').mockReturnValue(true);
     jest.spyOn(fs, 'readFileSync').mockReturnValue(JSON.stringify(fileConfig));
 
-    const { default: getConfig } = await import('./config.js');
+    const { default: getConfig } = await import('../config.js');
     const config = getConfig();
         expect(config.port).toBe(9999);
     expect(config.target).toBe('http://file.config.com');
